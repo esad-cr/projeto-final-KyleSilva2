@@ -79,3 +79,27 @@ iframe, video {
   height: 100%;
   width: 100%
 }
+
+body{
+  font-size: 16px;
+  font-family: "Inter", sans-serif ;
+}
+h1,h2,h3,h4,h5{
+  font-family: "Inter", sans-serif ;
+}
+h1{
+  font-size: 1;
+  font-weight: 400;
+  letter-spacing: 0rem;
+  line-height: 1.0;
+}
+h2{
+  font-size: 2.986rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+h3{
+  font-size: 2.074rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
