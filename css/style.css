@@ -109,7 +109,40 @@ h1,h2,h3,h4,h5{
   font-family: Inter, sans-serif ;
 }
 
-/*********************Tipografia Mobile*************/
+p{
+  font-size: 34px;
+}
+
+small{
+}
+
+strong{
+  font-weight: var(--font-semi-bold);
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration:none;
+  color: var(--secundary-color);
+}
+
+a:hover, a:active, a.active {
+  color: var(--primary-color)
+}
+
+ /********************Largura do elemento do body********************/
+ 
+ .pageWidth {
+ width: 100%;
+ max-width: 1680%;
+ margin: 0 auto;
+ padding: 0 16px
+ }
+
+/***************Tipografia Mobile*************/
 h1{
   font-size: 1;
   font-weight: 400;
@@ -139,4 +172,3 @@ h3{
     font-size: 3.998rem;
   }
 }
-
