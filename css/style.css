@@ -172,3 +172,24 @@ h3{
     font-size: 3.998rem;
   }
 }
+
+/***********Menu de navegação***********/
+
+#topHeader {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  /*background-color: var();*/
+  /*box-shadow: 0 2px 16px rgb();*/
+  z-index: var(--z-fixed);
+}
+
+#mainMenu {
+  height: var(--header-height);
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
