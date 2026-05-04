@@ -337,7 +337,7 @@ h3{
 /********************mainContent******************/
 
 #mainContent {
-  margin-top: var(--header-height)!important;
+  margin-top: 5rem !important;
 }
 
 @media screen and (min-width: 992px) {
