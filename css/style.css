@@ -130,6 +130,19 @@ a{
 a:hover, a:active, a.active {
   color: var(--primary-color)
 }
+/************* espaçar elementos *************/
+.space-S{
+  height: 30px;
+}
+.space-M{
+  height: 60px;
+}
+.space-L{
+  height: 90px;
+}
+.space-XL{
+  height: 120px;
+}
 
  /********************Largura do elemento do body********************/
  
@@ -146,16 +159,19 @@ h1{
   font-weight: 400;
   letter-spacing: 0rem;
   line-height: 1.0;
+  color: var(--primary-color);
 }
 h2{
   font-size: 2.986rem;
   font-weight: 700;
   line-height: 1.5;
+  color: var(--primary-color);
 }
 h3{
   font-size: 2.074rem;
   font-weight: 700;
   line-height: 1.2;
+  color: var(--primary-color);
 }
 
 /***************Tipografia Desktop*********************/
@@ -318,3 +334,15 @@ h3{
     background-color: transparent;
   }
 }
+/********************mainContent******************/
+
+#mainContent {
+  margin-top: var(--header-height)!important;
+}
+
+@media screen and (min-width: 992px) {
+  #mainContent {
+    margin-top: 5.5rem !important;
+  }
+}
+/******************mainFooter******************/
