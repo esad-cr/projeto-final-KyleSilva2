@@ -547,11 +547,29 @@ p{
 .bg-primary-color {
   background-color: var(--body-color);
 }
-.bg-secondary-color {
-  background-color: var(--body-color);
+.bg-primary-img{
+  background-image: url(../imagens/cards/card\ sobre\ mim.jpeg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
 }
-.bg-third-color {
-  background-color: var(--body-color);
+.bg-secundary-img{
+  background-image: url(../imagens/cards/card3.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+.bg-third-img{
+  background-image: url(../imagens/cards/cardprocessing.gif);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+.bg-thourd-img{
+  background-image: url(../imagens/cards/card\ contactos.png);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
 }
 /*---- articles - estilo do card ----*/
 .container article:first-child {
