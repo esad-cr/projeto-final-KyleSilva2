@@ -84,7 +84,7 @@ iframe, video {
   --header-height: 3.5rem;
 
   /********Colors********/
-  --body-color: rgb(0, 0, 0);
+  --body-color: rgb(10, 10, 10);
   --primary-color: rgb(224,71,255);
   --secundary-color: rgb(150,62,168);
   --tertiary-color: rgb(115,0,138);
