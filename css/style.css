@@ -155,7 +155,7 @@ a:hover, a:active, a.active {
 
 /***************Tipografia Mobile*************/
 h1{
-  font-size: 1;
+  font-size: 1.5;
   font-weight: 400;
   letter-spacing: 0rem;
   line-height: 1.0;
@@ -173,17 +173,28 @@ h3{
   line-height: 1.2;
   color: var(--primary-color);
 }
+p{
+  font-size: 0.7rem;
+  font-weight: 350;
+  line-height: 1;
+  color: var(--primary-color);
+}
 
 /***************Tipografia Desktop*********************/
 @media (min-width: 992px) {
   h1{
-    font-size: 2.25;
+    font-size: 2.25rem;
+    color: var(--primary-color);
   }
   h2{
-    font-size: 4.3;
+    font-size: 4.3rem;
   }
   h3{
     font-size: 3.998rem;
+  }
+  p{
+    font-size: 1rem;
+    color: var(--primary-color);
   }
 }
 
