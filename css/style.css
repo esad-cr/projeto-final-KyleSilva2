@@ -356,8 +356,8 @@ p{
     margin-top: 5.5rem !important;
   }
 }
-/******************mainFooter******************/
-/*=============== CARD ===============*/
+
+/*=============== CARD Projetos ===============*/
 .card-expand {
   height: 100vh;
   margin-inline: 1rem;
@@ -506,6 +506,107 @@ p{
   .card__description {
     font-size: var(--normal-font-size);
     white-space: nowrap;
+  }
+}
+/****************************************
+************* mainFooter ***************
+****************************************/
+
+#mainFooter {
+  padding: 20px;
+  text-align: center;
+}
+/****************************************
+************* cards ***************
+****************************************/
+/*---- Definir o flex/autolayout ----*/
+.container {
+  --gap: 0;
+  padding: 2rem;
+  
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap, 1em);
+}
+.box_shadow {
+  box-shadow: 3px 3px 15px 2px var(--tertiary-color)
+}
+.border_radius {
+  border-radius: 8px;
+}
+.flex-column {
+  flex-direction: column;
+  width:50%;
+  margin-left: 0;
+  margin: 0;
+}
+
+/*---- Definir as background-colors ----*/
+.bg-primary-color {
+  background-color: var(--body-color);
+}
+.bg-secondary-color {
+  background-color: var(--body-color);
+}
+.bg-third-color {
+  background-color: var(--body-color);
+}
+/*---- articles - estilo do card ----*/
+.container article:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.container article:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.container article {
+  --gap: 2em;
+  line-height: 1.5;
+  padding: 3em;
+}
+.container article > img {
+  width: 4rem;
+}
+
+/*----- botões -----*/
+.learn-more-button {
+  border: none;
+  border-radius: 40px;
+  letter-spacing: 1px;
+  padding-block: 0.79em;
+  padding-inline: 2.3em;
+  margin: auto;
+  margin-top: 3em;
+  transition: background-color 200ms ease-in-out;
+}
+
+.learn-more-button:hover {
+  background-color: inherit;
+  outline: 2px solid var(--white-color);
+  color: var(--white-color);
+}
+
+@media screen and (max-width: 992px) {
+  .container .flex{
+    flex-direction: column;
+    max-width: 100%;
+    min-width: 90%;
+  }
+  .container article {
+    width:100%;
+  }
+  .container article:first-child {
+    border-radius: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .container article:last-child {
+    border-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
 }
 /****************************************
