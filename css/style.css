@@ -838,3 +838,78 @@ p{
     .contact-form-row {
         grid-template-columns: 1fr;
     }
+  }
+
+  /***************** Sobre-Mim ****************/
+
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90vh;
+    width: 100%;
+}
+ 
+ 
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 56px;
+}
+ 
+
+.about-heading {
+    margin-bottom: 24px;
+}
+ 
+
+.about-text {
+    margin-bottom: 20px;
+}
+ 
+.about-text:last-of-type {
+    margin-bottom: 0;
+}
+ 
+/* ── Citação ── */
+.about-quote {
+    margin-top: 40px;
+    /*font-style: italic;*/  
+    border: none;
+    padding: 0;
+   
+}
+ 
+
+.about-photo {
+    overflow: hidden;
+}
+ 
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+ 
+ 
+@media (max-width: 860px) {
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+ 
+    
+    .about-photo {
+        order: -1;
+        height: 55vw;
+        min-height: 260px;
+    }
+ 
+    .about-content {
+        padding: 40px 24px 60px;
+    }
+}
+ 
