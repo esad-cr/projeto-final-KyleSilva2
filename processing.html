@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+         <!-- p5.js carregado antes do sketch -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
     </head>
     <body>
        
@@ -48,9 +50,32 @@
                 </div>
             </nav>
         </header>
-        <main id="mainContent" class="pageWidth"></main>
-       
-            <h2>Processing</h2>
+        <main id="mainContent" class="pageWidth">
+ 
+            <section class="processing-section">
+ 
+                <!-- Coluna esquerda: título e descrição -->
+                <div class="processing-info">
+                    <h2 class="processing-heading">Processing</h2>
+                    <p class="processing-text">
+                        Um relógio interativo em pixel art. Clica no baú para o abrir
+                        e revelar o pergaminho. O personagem também reage ao teu clique — experimenta!
+                    </p>
+                    <p class="processing-text">
+                        O balão de fala aparece automaticamente a cada hora e desaparece
+                        ao fim de 15 segundos.
+                    </p>
+                </div>
+ 
+                <!-- Coluna direita: canvas p5.js -->
+                <div class="processing-canvas-wrapper">
+                    <div id="p5-canvas"></div>
+                </div>
+ 
+            </section>
+ 
+        </main>
+
         
         <footer id="mainFooter" class="pageWidth">
             <!-- Define o rodapé da página ou de uma secção. Contém informações como: Direitos de autor, contatos, links úteis e créditos -->
@@ -58,6 +83,8 @@
         </footer>
         
         <script src="js/script.js"></script>
-        <script src="processing/script.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Sketch na pasta processing/, assets na pasta p5/ -->
+        <script src="processing/script.js"></script>
+
     </body>
 </html>
