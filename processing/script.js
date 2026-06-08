@@ -19,16 +19,18 @@ new p5(function(p) {
     p.preload = function() {
         bg         = p.loadImage("p5/background.gif");
         mcFont     = p.loadFont("p5/Minecraft.ttf");
-        bauFechado = p.loadImage("p5/Pixelart Bau.png");
-        bauAberto  = p.loadImage("p5/Pixelart Bau aberto.png");
-        scrollImg  = p.loadImage("p5/Pixelart Scroll.png");
-        falaImg    = p.loadImage("p5/Pixelart Balão de falas.png");
+        bauFechado = p.loadImage("p5/Pixelart-Bau.png");
+        bauAberto  = p.loadImage("p5/Pixelart-Bau-aberto.png");
+        scrollImg  = p.loadImage("p5/Pixelart-Scroll.png");
+        falaImg    = p.loadImage("p5/Pixelart-Balão-de-falas.png");
     };
  
     // ── setup ──────────────────────────────────────────────
     p.setup = function() {
-        let canvas = p.createCanvas(450, 450);
-        canvas.parent("p5-canvas");
+        var myCanvas = createCanvas(450,450);
+        myCanvas.parent("pjCanvas");
+        /*let canvas = p.createCanvas(450, 450);*/
+        /*canvas.parent("p5-canvas");*/
         p.textFont(mcFont);
         p.textAlign(p.CENTER, p.CENTER);
         p.noSmooth();
